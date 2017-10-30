@@ -1,0 +1,24 @@
+<ul>
+	<li>Root
+		<ul>
+			<li>folder1
+				<ul>
+					<li>folder1.1</li>
+				</ul>
+				<ul>
+					<li>file1</li>
+					<li>file2</li>
+					<li>file3</li>
+				</ul>
+			</li>
+			<li>folder2
+				<ul>
+					<li>folder2.1</li>
+					<li>folder2.2</li>
+					<li>folder2.3</li>
+				</ul>
+			</li>
+			<li>folder3</li>
+		</ul>
+	</li>
+</ul>

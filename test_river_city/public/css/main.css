@@ -1,0 +1,308 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Tahoma;
+}
+
+main {
+    padding: 30px 40px 0px 40px;
+    width: 620px;
+    float: left;
+    position: relative;
+}
+
+.main-header {
+    height: 100px;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+h2,
+h2 input {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 13.5px;
+    letter-spacing: .5px;
+    color: #888;
+}
+
+textarea {
+    border: 0;
+    font-family: Arial;
+    font-size: 15px;
+    outline: none;
+    overflow: auto;
+    line-height: 19px;
+}
+
+nav {
+    padding: 30px 20px; 
+    width: 260px;
+    min-height: 800px;
+    float: left;
+    background: #383838;
+    overflow: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 33px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #888888;
+    z-index: 1;
+}
+
+.folder,
+.file {
+    margin: 12px 0px;
+    width: 30px;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+
+.file {
+margin-left: -8px;
+}
+
+.folder:hover,
+.file:hover,
+.file-target,
+.folder-target {
+    color: #FFF;
+}
+
+#folder-create,
+#folder-create:hover,
+#file-create,
+#file-create:hover,
+#file-update {
+    background: #FFF;
+}
+
+.folder::before,
+.folder:hover::before,
+.folder-selected::before,
+.folder-selected:hover::before,
+.folder-target::before,
+.folder-taget:hover::before,
+.file::before,
+.file-target::before,
+#folder-create,
+#folder-create:hover,
+#file-create,
+#file-create:hover,
+#file-update,
+#folder-delete,
+#file-delete {
+    background-image: url(../img/icons.png);
+}
+
+.folder::before,
+.folder:hover::before,
+.folder-selected::before,
+.folder-selected:hover::before,
+.folder-target::before,
+.folder-taget:hover::before,
+.file::before,
+.file-target::before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+.folder::before,
+.folder:hover::before {
+    width: 23px;
+    height: 20px;
+    top: -4px;
+    left: -31px;
+}
+
+.folder-selected::before,
+.folder-selected:hover::before {
+    width: 26px;
+    height: 20px;
+    top: -4px;
+    left: -32px;
+}
+
+.folder-target::before,
+.folder-target:hover::before {
+    width: 26px;
+    height: 20px;
+    top: -4px;
+    left: -32px;
+}
+
+.file::before,
+.file-target::before,
+.file:hover::before {
+    width: 14px;
+    height: 20px;
+    top: -4px;
+    left: -23px;
+}
+
+.folder::before {
+    background-position: -1px -205px;
+}
+
+.folder:hover::before {
+     background-position: -47px -205px;
+}
+
+.folder-selected::before {
+     background-position: -1px -224px;
+}
+
+.folder-selected:hover::before {
+    background-position: -53px -224px;
+}
+
+.folder-target::before,
+.folder-target:hover::before {
+     background-position: -27px -224px;
+}
+
+.folder-target::after,
+.file-target::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1200px;
+    height: 31px;
+    top: -7px;
+    left: -600px;
+    background: #157EFB;
+    z-index: -1;
+}
+.file::before {
+     background-position: -1px -243px;
+}
+
+.file:hover::before,
+.file-target::before {
+    background-position: -15px -243px;
+}
+
+#folder-create,
+#folder-create:hover {
+    width: 96px;
+    height: 72px;
+}
+
+#folder-create {
+    background-position: -1px -1px;
+    cursor: pointer;
+}
+
+#folder-create:hover {
+    background-position: -97px -1px;
+}
+
+#formFolderCreate div {
+    height: 0px;
+    color: #157EFB;
+    position: absolute;
+    top: 168px;
+    left: 130px;
+    text-align: center;
+}
+
+#formFolderCreate div:hover {
+    color: #FF9500;
+}
+
+#formFolderCreate label {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 13.5px;
+    letter-spacing: .45px;
+    cursor: pointer;
+}
+
+#file-create,
+#file-create:hover {
+    width: 60px;
+    height: 76px;
+}
+
+#file-create {
+    background-position: -1px -74px;
+    cursor: pointer;
+}
+
+#file-create:hover {
+    background-position: -61px -74px;
+}
+
+#formFileCreate div {
+    height: 0px;
+    color: #157EFB;
+    position: absolute;
+    top: 164px;
+    right: 170px;
+    text-align: center;
+}
+
+#formFileCreate div:hover {
+    color: #FF9500;
+}
+
+#formFileCreate label {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 13.5px;
+    letter-spacing: .45px;
+    cursor: pointer;
+}
+
+#file-update,
+#file-update:hover {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 32px;
+    right: 95px;
+}
+
+#file-update {
+    background-position: -1px -151px;
+    cursor: pointer;
+}
+
+#file-update:hover {
+    background-position: -27px -151px;
+}
+
+#folder-delete,
+#file-delete {
+    display: inline-block;
+    width: 21px;
+    height: 27px;
+    background-position: -1px -441px;
+    position: absolute;
+    top: 31px;
+    right: 46px;
+    
+}
+
+#folder-delete:hover,
+#file-delete:hover {
+    background-position: -22px -441px;
+}
